@@ -2,13 +2,8 @@
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
     }
   ],
   "[rust]": {
@@ -40,156 +35,60 @@
   "vim.leader": "<space>",
   "vim.normalModeKeyBindings": [
     {
-      "before": [
-        "leader",
-        "w"
-      ],
-      "commands": [
-        "workbench.action.files.save"
-      ]
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
     },
     {
-      "before": [
-        "leader",
-        "g"
-      ],
-      "commands": [
-        "editor.action.revealDefinition"
-      ]
+      "before": ["leader", "G"],
+      "commands": ["editor.action.revealDefinition"]
     },
     {
-      "before": [
-        "leader",
-        "u"
-      ],
-      "commands": [
-        "workbench.action.splitEditorDown"
-      ]
+      "before": ["leader",  "H"],
+      "commands": ["workbench.action.navigateBack"]
     },
     {
-      "before": [
-        "leader",
-        "i"
-      ],
-      "commands": [
-        "workbench.action.splitEditorLeft"
-      ]
+      "before": ["leader",  "L"],
+      "commands": ["workbench.action.navigateForward"]
     },
     {
-      "before": [
-        "d",
-        "n"
-      ],
-      "after": [
-        "^",
-        "d",
-        "$",
-        "a"
-      ]
+      "before": ["leader", "u"],
+      "commands": ["workbench.action.splitEditorDown"]
     },
     {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.action.focusSideBar"
-      ]
+      "before": ["leader", "i"],
+      "commands": ["workbench.action.splitEditorLeft"]
     },
     {
-      "before": [
-        "<leader>",
-        "j"
-      ],
-      "commands": [
-        "workbench.action.navigateDown"
-      ]
+      "before": ["d", "n"],
+      "after": ["^", "d", "$", "a"]
     },
     {
-      "before": [
-        "<leader>",
-        "k"
-      ],
-      "commands": [
-        "workbench.action.navigateUp"
-      ]
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.focusSideBar"]
     },
     {
-      "before": [
-        "<leader>",
-        "l"
-      ],
-      "commands": [
-        "workbench.action.navigateRight"
-      ]
+      "before": ["leader", "f", "r"],
+      "commands": ["editor.action.formatDocument"]
     },
     {
-      "before": [
-        "<leader>",
-        "h"
-      ],
-      "commands": [
-        "workbench.action.navigateLeft"
-      ]
+      "before": ["leader", "z"],
+      "commands": ["workbench.action.toggleZenMode"]
     },
     {
-      "before": [
-        "leader",
-        "f",
-        "r"
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ]
+      "before": ["leader", "K"],
+      "after": ["g", "t"]
     },
     {
-      "before": [
-        "leader",
-        "z"
-      ],
-      "commands": [
-        "workbench.action.toggleZenMode"
-      ]
+      "before": ["leader", "J"],
+      "after": ["g", "T"]
     },
     {
-      "before": [
-        "leader",
-        "l"
-      ],
-      "after": [
-        "g",
-        "t"
-      ]
+      "after": [":", "q", "<enter>"],
+      "before": ["leader", "q"]
     },
     {
-      "before": [
-        "leader",
-        "h"
-      ],
-      "after": [
-        "g",
-        "T"
-      ]
-    },
-    {
-      "after": [
-        ":",
-        "q",
-        "<enter>"
-      ],
-      "before": [
-        "leader",
-        "q"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "."
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
+      "before": ["leader", "."],
+      "commands": ["editor.action.quickFix"]
     }
   ],
   "vim.handleKeys": {
@@ -205,10 +104,9 @@
   "editor.fontFamily": "'Dank Mono', 'monospace', monospace",
   "dart.flutterHotReloadOnSave": "all",
   "workbench.colorTheme": "GitHub Dark",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
   "rust-analyzer.inlayHints.renderColons": false,
   "editor.tabSize": 2,
-  "workbench.sideBar.location": "right",
   "editor.fontSize": 15,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -232,10 +130,6 @@
   "[python]": {
     "editor.formatOnType": true
   },
-  "window.zoomLevel": 1,
-  {
-    "key": "shift+delete",
-    "command": "deleteFile",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
-  },
+  "workbench.activityBar.visible": false,
+  "window.zoomLevel": -1
 }
